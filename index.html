@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text-to-Speech Application</title>
+</head>
+<body>
+    <header>
+        <h1>Text-to-Speech Application</h1>
+    </header>
+    <div class="main">
+        <div class="controls">
+            <label for="text-input">Enter text:</label>
+            <input type="text" id="text-input" placeholder="Type your text here">
+            <button id="speak-button" onclick="speak()">Speak</button>
+        </div>
+        <div class="loader hide">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="pic hide1">
+            <img src="./pics/speaking.png">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
